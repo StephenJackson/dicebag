@@ -75,7 +75,7 @@ class DiceBag(object):
     #For when you just need to roll ALOT of dice.
     def roll_many(self, times, sides=None, explode=False):
         """ times = int, [sides = int], [explode = bool]. returns list """
-        if sides = None:
+        if sides == None:
             sides = self.default_sides
         if explode:
             return [self.explode(sides) for x in range(times)]
